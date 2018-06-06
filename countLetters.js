@@ -2,12 +2,11 @@ function countLetters(input){
  var splitLetters = input.split(" ").join("");
  var alphabet = "qwertyuiopasdfghjklzxcvbnm"
  var obj = {}
-
-
+ 
  for (var i = 0; i < splitLetters.length; i++) {
    if (splitLetters.includes(splitLetters[i])) {
-     var key = splitLetters[i];
-     if (!(key in obj)) {
+     var letter = splitLetters[i];
+     if (!(letter in obj)) {
        obj[splitLetters[i]] = 0
        obj[splitLetters[i]] += 1
      } else {
